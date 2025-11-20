@@ -56,3 +56,4 @@ As Turner et al. (2001) discusses, transferring from fine to coarse grain causes
 3. Run the R script:
 ```r
 source("vegetation_scale_analysis.R")
+```
