@@ -32,19 +32,39 @@ I started with high-resolution data (28m) and systematically coarsened it to 56m
 
 ## Key Findings
 
-### 1.Scale-Dependent Patterns
+### 1. Scale-Dependent Patterns
+![All Vegetation Classes Across Scales](images/proportion_all_classes.png)
+
+
 - **Barren land and other surfaces** showed the most dramatic changes with scale
-- Barren land decreased from ~10% at 28m to ~3% at 896m resolution
+- Barren land decreased from ~10% at 28m to ~3% at 896m resolution  
 - **Closed canopy forests** remained relatively stable across scales
 - **Open canopy areas** showed moderate sensitivity to resolution changes
 
-### 2.Most Affected Classes
-- **Most sensitive**: Barren land and other surfaces (changed by >0.06 in proportion)
-- **Least sensitive**: Closed canopy and open canopy areas (changed by ~0.03)
+### 2. Visual Evidence of Scale Effects
+![Original Vegetation Map](images/original_vegetation_map.png)
 
-### 3.Ecological Interpretation
+
+| 56m | 112m | 224m |
+|:---:|:---:|:---:|
+| ![56m Resolution](images/resolution_comparison_56m.png) | ![112m Resolution](images/resolution_comparison_112m.png) | ![224m Resolution](images/resolution_comparison_224m.png) |
+
+| 448m | 896m | 
+|:---:|:---:|
+| ![448m Resolution](images/resolution_comparison_448m.png) | ![896m Resolution](images/resolution_comparison_896m.png) |
+
+### 3. Most Affected Classes  
+![Sensitivity Comparison](images/sensitivity_comparison.png)
+
+
+**Most sensitive**: Barren land and other surfaces (changed by >0.06 in proportion)
+**Least sensitive**: Closed canopy and open canopy areas (changed by ~0.03)
+
+### 4. Ecological Interpretation
+![Scale Up Conceptual Diagram](images/conceptual_diagram.png)
+
+
 As Turner et al. (2001) discusses, transferring from fine to coarse grain causes information loss. Small, fragmented habitats like barren patches get "averaged out" when we look at broader scales, while large, continuous features like closed forests remain visible.
-
 ## Files Included
 - `vegetation_scale_analysis.R` - Complete R script with all analysis steps
 - `proportion_plots.png` - Graphs showing how each vegetation type changes with resolution
