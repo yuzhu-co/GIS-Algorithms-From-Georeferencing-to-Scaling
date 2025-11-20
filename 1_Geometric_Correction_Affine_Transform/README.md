@@ -10,6 +10,7 @@ The supplied orthophoto is not properly georeferenced. To correct it, I used a s
 - Real-world coordinates (SWEREF 99 TM: x, y)
 
 Using these paired points, I computed the six affine transformation parameters:
+
 X' = X0 + mx * X + α * Y
 
 Y' = Y0 + my * Y + β * X
