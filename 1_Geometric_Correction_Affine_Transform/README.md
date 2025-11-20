@@ -47,7 +47,10 @@ Resolution: 1 meter.
 For each pixel in the target grid, I transformed the coordinate backward into image space and assigned the corresponding value using nearest neighbor interpolation.
 
 ### 6. Visualization
-Both the original and the geometrically corrected image were displayed using Matplotlib.
+![Geometrically Corrected Aerial Photo](swerff99.png)
+*Orthophoto after geometric correction in SWEREF 99 TM coordinate system*
+
+Both the original and the geometrically corrected image were displayed using Matplotlib. The transformation successfully aligned the aerial photo with the SWEREF 99 TM coordinate system, making it suitable for further geographic analysis.
 
 ### Files
 affine_transform.py — main script containing the affine function and full workflow
