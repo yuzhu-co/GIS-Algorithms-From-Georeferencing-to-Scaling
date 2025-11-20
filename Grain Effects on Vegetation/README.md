@@ -51,8 +51,8 @@ As Turner et al. (2001) discusses, transferring from fine to coarse grain causes
 - `report.pdf` - Formal assignment submission (if applicable)
 
 ## How to Run
-1. Ensure you have R installed with the `raster` package
-2. Place the `mbveg2.rst` and `mbveg2.rdc` files in your working directory
+1. R - `raster` package
+2. Use `mbveg2.rst` and `mbveg2.rdc` files in the working directory
 3. Run the R script:
 ```r
 source("vegetation_scale_analysis.R")
