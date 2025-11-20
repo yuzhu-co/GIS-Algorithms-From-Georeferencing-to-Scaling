@@ -18,13 +18,13 @@ I started with high-resolution data (28m) and systematically coarsened it to 56m
 
 ## Methodology
 
-### Data Processing
+### 1.Data Processing
 - Loaded the Mer Bleue vegetation raster using R's `raster` package
 - Used `aggregate(mb, factor=2, fun=modal)` to coarsen resolution by factors of 2, 4, 8, 16, and 32
 - Calculated area proportions for each vegetation class at each resolution
 - Created visualizations to compare patterns across scales
 
-### Key R Skills Used
+### 2.Key R Skills Used
 - Raster data manipulation with `raster` package
 - Data frame management and transposition
 - Custom plotting with proper axis labeling
@@ -32,17 +32,17 @@ I started with high-resolution data (28m) and systematically coarsened it to 56m
 
 ## Key Findings
 
-### Scale-Dependent Patterns
+### 1.Scale-Dependent Patterns
 - **Barren land and other surfaces** showed the most dramatic changes with scale
 - Barren land decreased from ~10% at 28m to ~3% at 896m resolution
 - **Closed canopy forests** remained relatively stable across scales
 - **Open canopy areas** showed moderate sensitivity to resolution changes
 
-### Most Affected Classes
+### 2.Most Affected Classes
 - **Most sensitive**: Barren land and other surfaces (changed by >0.06 in proportion)
 - **Least sensitive**: Closed canopy and open canopy areas (changed by ~0.03)
 
-### Ecological Interpretation
+### 3.Ecological Interpretation
 As Turner et al. (2001) discusses, transferring from fine to coarse grain causes information loss. Small, fragmented habitats like barren patches get "averaged out" when we look at broader scales, while large, continuous features like closed forests remain visible.
 
 ## Files Included
