@@ -53,7 +53,6 @@ affine_transform.py — main script containing the affine function and full work
 
 original_vs_transformed.png — comparison of the original and corrected images
 
-report.pdf — (optional) assignment report
 
 ### Requirements:
 Python 3,
