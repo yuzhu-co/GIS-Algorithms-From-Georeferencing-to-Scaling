@@ -26,10 +26,10 @@ I constructed matrix A (image coordinates) and vector B (SWEREF coordinates), th
 ```python
 numpy.linalg.lstsq()
 ```
-3. Compute RMSE
+### 3. Compute RMSE
 To assess accuracy, I applied the transformation to all GCPs and calculated the Root Mean Square Error (RMSE):
 RMSE = √( Σ (Δx² + Δy²) / N )
-4. Define the target grid
+### 4. Define the target grid
 An empty SWEREF 99 TM raster was created using the specified bounding box:
 
 xmin = 731000
@@ -42,21 +42,20 @@ ymax = 7132700
 
 Resolution: 1 meter.
 
-5. Resampling
+### 5. Resampling
 For each pixel in the target grid, I transformed the coordinate backward into image space and assigned the corresponding value using nearest neighbor interpolation.
 
-6. Visualization
+### 6. Visualization
 Both the original and the geometrically corrected image were displayed using Matplotlib.
 
-Files
+### Files
 affine_transform.py — main script containing the affine function and full workflow
 
 original_vs_transformed.png — comparison of the original and corrected images
 
 report.pdf — (optional) assignment report
 
-Requirements:
-
+### Requirements:
 Python 3,
 NumPy,
 Matplotlib
