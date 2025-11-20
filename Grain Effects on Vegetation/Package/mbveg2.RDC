@@ -1,0 +1,29 @@
+file format : IDRISI Raster A.1
+file title  : 
+data type   : byte
+file type   : binary
+columns     : 341
+rows        : 181
+ref. system : utm-18n
+ref. units  : m
+unit dist.  : 1.0000000
+min. X      : 1522433.1601732
+max. X      : 1531969.3506494
+min. Y      : 6393669.7822446
+max. Y      : 6398738.9949749
+pos'n error : unknown
+resolution  : 28.0067005
+min. value  : 1
+max. value  : 6
+display min : 1
+display max : 6
+value units : unspecified
+value error : unknown
+flag value  : none
+flag def'n  : none
+legend cats : 0
+lineage     : This file was created by the RECLASS module with the command line: 
+lineage     : I*g:\teaching\vt12\sa\ex4\mbveg1.rst*g:\teaching\vt12\sa\ex4\mbveg2.rst*3*g:\teaching\vt12\sa\ex4\idrtemp.rcl
+lineage     : File g:\teaching\vt12\sa\ex4\idrtemp.rcl contains the following:
+lineage     :     1 0 2
+lineage     :     -9999
